@@ -18,7 +18,7 @@ body {
 /* Basic styling */
 
 .jumbotron {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
+  background-image: url("images/wales.jpg"); 
   height: 100%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -51,8 +51,17 @@ body {
 
 .icon-close {
   cursor: pointer;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
+  padding-left: 25px;
   padding-top: 10px;
+  
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 .icon-menu {
@@ -60,6 +69,7 @@ body {
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  font-weight: bold;
   padding-bottom: 25px;
   padding-left: 25px;
   padding-top: 25px;
