@@ -4,7 +4,6 @@ body {
   margin: 0;
   /*overflow: hidden;*/
   position: relative;
-  background-color: #000000;
 }
 
 /* Initial menu */
@@ -19,7 +18,8 @@ body {
 /* Basic styling */
 
 .jumbotron {
-  background-image: url("images/wales.jpg"); 
+  /*background-image: url("images/wales.jpg");*/
+  background-color: #000000;
   height: 100%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
