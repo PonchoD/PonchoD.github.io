@@ -1,0 +1,80 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="tony.bardill@gmail.com";
+    $subject="Warsaw Suggestion";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?><!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet'>
+	<title>Contact</title>
+  </head>
+  <body>
+
+    <div class="menu">
+      
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <!--<img src="images/close_button.png">-->
+		Close Menu
+      </div>
+
+      <!-- Menu -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Main body -->
+    <div class="jumbotron">
+
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+        Menu
+      </div>
+	  
+    <div class="articles container">
+      <div class="article current">
+        <div class="item row">
+          <div class="col-xs-3">
+            <p class="source">Contact</p>
+          </div>
+          <div class="col-xs-6">
+            <p class="title"></p>
+          </div>
+          <div class="col-xs-3">
+            <p class="pubdate">June 23</p>
+          </div>
+        </div>
+        <div class="description row">
+          <div class="col-xs-3">&nbsp;</div>
+          <div class="col-xs-6">
+            <h1>If you want to add some information.</h1>
+			<p>Contact me on the below email address with whatever you think is relevant, pubs, clubs, mass graves, etc. and I'll put it up.</p>
+            <p>Email: <a href="mailto:tony.bardill@gmail.com">tony.bardill@gmail.com</a></p>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
