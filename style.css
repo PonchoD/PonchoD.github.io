@@ -4,7 +4,7 @@ body {
   margin: 0;
   /*overflow: hidden;*/
   position: relative;
-  background-color: #194d33;
+  background-color: #77b300;
 }
 
 /* Initial menu */
@@ -148,6 +148,12 @@ p {
 cursor: pointer;
 padding-top: 10px;
 padding-bottom: 10px
+}
+
+.powerd{
+position: fixed;
+right: 0;
+bottom: 0;
 }
 
 /*--------------------------------*/
